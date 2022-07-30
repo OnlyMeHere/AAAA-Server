@@ -21,7 +21,7 @@ This is AAAA Server. Ready for your e-commerce business to live on.
 ## Description:
 
 
-## Instalation:
+## Installation:
 
 
 
