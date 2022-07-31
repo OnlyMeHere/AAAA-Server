@@ -8,7 +8,7 @@ class Product extends Model {}
 
 // set up fields and rules for Product model
 // 'Product' belongs to 'Catagory'
-// 'Product' belongs to many 'Tag' models.
+// 'Product' belongs to many 'Tag' model.
 // Using the 'ProductTag' through model, allow 'Products' to have multiple 'Tags' and 'Tags' to have many 'Products'
 
 Product.init(
