@@ -13,16 +13,38 @@ class Product extends Model {}
 
 Product.init(
   {
-    // define columns
     // 'id' INTEGER, NOT NULL, SET PRIMARY KEY, AUTO_INCREMENT
-
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     // 'product_name' STRING, NOT NULL
-
+    product_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     // 'price' DECIMAL, NOT NULL, VALIDATES TRUE DECIMAL
-
+    price: {
+      type: DataTypes.DECIMAL,
+      allowNull: false,
+      isDecimal: true,
+    },
     // 'stock' INTEGER, NOT NULL, DEFAULT VALUE 10, VALIDATES VALUE IS NUMARIC
-
-    // 'catigory_id' INTEGER, REFERENCE 'catagory' model's 'id'
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      isInt: true,
+    },
+    // 'catigory_id' INTEGER, REFERENCE 'category' model's 'id'
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
+      },
+    },
 
   },
   {
