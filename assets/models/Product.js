@@ -35,7 +35,9 @@ Product.init(
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      isInt: true,
+      validate: {
+        isInt: true,
+      },
     },
     // 'catigory_id' INTEGER, REFERENCE 'category' model's 'id'
     category_id: {
