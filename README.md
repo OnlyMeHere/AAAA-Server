@@ -46,6 +46,10 @@ This is AAAA Server. Ready for your e-commerce business to live on.
 
 * When that completes, you are ready to type ```npm start``` to intialize the application.
 
+* Now you should be able to use Insomnia to test the application.
+
+* However, this part failed for me and it's 11pm on a school night so this is a "pencils down" moment. So the application is not working and I'm out of time. I may be back to fix it but the pace of this BootCamp is such that I don't have time. Thanks for listening...
+
 
 
 
